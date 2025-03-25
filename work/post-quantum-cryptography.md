@@ -19,6 +19,7 @@ but cryptography comes with others as well.
 
 # Classic Method
 
-With TLS we provide certificates containing the public key.
+With TLS we authenticate with certificates containing their public key.
+The receiver of the public key can establish an encrypted communication channel with the sender of the key.
 Communicating entities verify the identity of the other one by encoding a challenge, encrypting it, and then sending it to the other entity.
 The receiver decrypts the encrypted challenge and generates the correct answer.
