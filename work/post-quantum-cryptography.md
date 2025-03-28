@@ -22,6 +22,11 @@ but cryptography comes with others as well.
 Transport Layer Security (TLS) establishes secure communication sessions.
 
 1. Its handshake algorithm authenticates with certificates containing their public key.
-2. The receiver of the public key establishes an encrypted communication channel with the sender of the key.
-3. Communicating entities verify the identity of the other one by encoding a challenge, encrypting it, and then sending it to the other entity.
-4. The receiver decrypts the encrypted challenge and generates the correct answer.
+2. Communicating entities verify the identity of the other one by verifying the signature of the certificate against their set of trusted certificates.
+3. The receiver of the public key establishes an encrypted communication channel with the sender of the key by
+    - encrypting a cryptographically secure random number with the public key or
+    - securely generating a cryptographically secure random number
+4. The sender decrypts the encrypted challenge and generates the correct answer.
+
+You can see this with the command
+`echo Q | openssl s_client -msg openssl.org:443 | grep TLS`.
