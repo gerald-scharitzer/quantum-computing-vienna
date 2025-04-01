@@ -1,6 +1,7 @@
 # Post-Quantum Cryptography
 
-provides key exchange and signature algorithms that [resist quantum computers](https://www.etsi.org/technologies/quantum-safe-cryptography).
+also known as quantum-safe or quantum-resistant cryptography,
+provides key exchange and signature algorithms that [resist both classic and quantum computers](https://www.etsi.org/technologies/quantum-safe-cryptography).
 
 ⚠️ **Construction Site** ⚠️
 
@@ -30,3 +31,13 @@ Transport Layer Security (TLS) establishes secure communication sessions.
 
 You can see this with the command
 `echo Q | openssl s_client -msg openssl.org:443 | grep TLS`.
+
+# Quantum Cryptanalysis
+
+The Grover algorithm finds solutions for cryptographic hashes and symmetric keys in the square root of the hash size or key size respectively.
+
+The Shor algorithm finds solutions for asymmetric keys based on prime factoring and discrete logarithm in a polynomial of the key size.
+
+# References
+
+[Quantum-Safe Cryptography](https://learning.quantum.ibm.com/course/practical-introduction-to-quantum-safe-cryptography/quantum-safe-cryptography)
