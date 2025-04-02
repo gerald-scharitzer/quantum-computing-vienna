@@ -34,9 +34,17 @@ You can see this with the command
 
 # Quantum Cryptanalysis
 
-The Grover algorithm finds solutions for cryptographic hashes and symmetric keys in the square root of the hash size or key size respectively.
+The Grover algorithm finds solutions for cryptographic hashes and symmetric keys in the square root of the hash size or key size respectively. This can be neutralized by simply doubling the key size.
 
-The Shor algorithm finds solutions for asymmetric keys based on prime factoring and discrete logarithm in a polynomial of the key size.
+## Shor's Algorithm
+
+finds solutions for asymmetric keys based on prime factoring and discrete logarithm in a polynomial of the key size instead of growing exponentially with the key size.
+
+Classic: Real number `r` times basis `b` raised by exponent `n`
+
+Shor: Real number `s` times basis `n` raised by exponent `e`
+
+where `n` is the key size in bit.
 
 # References
 
