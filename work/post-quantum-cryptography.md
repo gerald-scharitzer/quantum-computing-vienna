@@ -5,6 +5,13 @@ provides key exchange and signature algorithms that [resist both classic and qua
 
 ⚠️ **Construction Site** ⚠️
 
+It is "post-quantum", because it extends cryptography into the future,
+beyond the point in time where have effective and efficient quantum computing systems.
+
+It is "quantum-safe", because it carries the practical safety of effective and efficient cryptography into the quantum era.
+
+It is "quantum-resistant" in as much as classic cryptography is resistant to classic analysis.
+
 # Objective
 
 Large parts of our information society rely on the following capabilities of cryptography.
