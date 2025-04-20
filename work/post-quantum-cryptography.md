@@ -41,7 +41,14 @@ You can see this with the command
 
 # Quantum Cryptanalysis
 
-The Grover algorithm finds solutions for cryptographic hashes and symmetric keys in the square root of the hash size or key size respectively. This can be neutralized by simply doubling the key size.
+The classic cryptographic algorithms that we rely on today are affected by
+quantum computers and algorithms to varying extents.
+
+## Grover's Algorithm
+
+finds solutions for cryptographic hashes and symmetric keys in the square root of the hash size or key size respectively.
+This can be neutralized by simply doubling the key size.
+Enforcing the collision resistance of cryptographic hash functions (CHFs) already requires doubling the hash size, so Grover is neutralized for CHFs by this.
 
 ## Shor's Algorithm
 
