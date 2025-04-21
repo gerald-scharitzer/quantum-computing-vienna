@@ -39,6 +39,14 @@ Transport Layer Security (TLS) establishes secure communication sessions.
 You can see this with the command
 `echo Q | openssl s_client -msg openssl.org:443 | grep TLS`.
 
+## Cryptographic Hash Functions (CHFs)
+
+enable data integrity checks and digital signatures.
+These one-way functions make it hard to find the input from the output (pre-image attack).
+The effort to find the input grows exponentially with the length of the hash value.
+It is statistically much more probable to find an input that results in the same output (birthday attack), which halves the effective hash size.
+Doubling the hash size restores the security level.
+
 # Quantum Cryptanalysis
 
 The classic cryptographic algorithms that we rely on today are affected by
@@ -49,6 +57,14 @@ quantum computers and algorithms to varying extents.
 finds solutions for cryptographic hashes and symmetric keys in the square root of the hash size or key size respectively.
 This can be neutralized by simply doubling the key size.
 Enforcing the collision resistance of cryptographic hash functions (CHFs) already requires doubling the hash size, so Grover is neutralized for CHFs by this.
+
+## BHT Algorithm
+
+combines aspects of the birthday attack with Grover's algorithm.
+It theoretically splits the effective key length into 1/3,
+but that would require quantum random access memory (QRAM),
+which we do not have yet.
+Without QRAM it still splits the effective key length to 2/5.
 
 ## Shor's Algorithm
 
