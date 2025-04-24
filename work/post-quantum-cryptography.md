@@ -41,8 +41,14 @@ You can see this with the command
 
 ## Cryptographic Hash Functions (CHFs)
 
-enable data integrity checks and digital signatures,
-by efficiently mapping long input values to short output values
+enable data integrity checks by identifying with high probability,
+whether a data set was changed or not,
+based on the single input of the data set itself only.
+Together with asymmetric key cryptography they enable digital signatures
+by verifying with high probability,
+whether the data was processed by something with access to a specific private key.
+
+CHFs rely on efficiently mapping long input values to short output values
 and varying greatly with small changes to the input.
 These one-way functions, based on the amount of computation per input length, make it hard to find the input from the output (pre-image attack).
 The effort to find the input grows exponentially with the length of the hash value.
