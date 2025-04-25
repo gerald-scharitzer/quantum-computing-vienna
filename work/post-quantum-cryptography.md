@@ -16,20 +16,20 @@ It is "quantum-resistant" in as much as classic cryptography is resistant to cla
 
 Large parts of our information society rely on the following capabilities of cryptography.
 
-Authenticity: We verify that we communicate with the right entity, before we send content.
-
-Integrity: We verify that the message we received is the one sent.
-
-Privacy: We communicate with each other and the content is known to us only.
+- Authenticity: We verify that we communicate with the right entity, before we send content.
+- Integrity: We verify that the message we received is the one sent.
+- Privacy: We communicate with each other and the content is known to us only.
 
 This context focuses on these three capabilities,
 but cryptography comes with others as well.
 
 # Classic Method
 
-Transport Layer Security (TLS) establishes secure communication sessions.
+Transport Layer Security (TLS) establishes secure communication sessions
+with its handshake algorithm.
 
-1. Its handshake algorithm authenticates with certificates containing their public key.
+1. The client requests a TLS connection and sends a list of supported cipher suites. These are combinations of symmetric key encryption algorithms, message authentication codes, key exchange algorithms, and parameters.
+1. The server and optionally the client authenticate with certificates containing their public keys and digital signatures.
 2. Communicating entities verify the identity of the other one by verifying the signature of the certificate against their set of trusted certificates.
 3. The receiver of the public key establishes an encrypted communication channel with the sender of the key by
     - encrypting a cryptographically secure random number with the public key or
