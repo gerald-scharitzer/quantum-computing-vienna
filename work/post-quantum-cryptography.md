@@ -31,13 +31,16 @@ with its handshake algorithm.
 1. The client requests a TLS connection and sends a list of supported cipher suites. These are combinations of symmetric key encryption algorithms, message authentication codes, key exchange algorithms, and parameters.
 2. The server sends which cipher suite it picked and
 authenticates with its digital certificate.
-3. If the server requests a client certificate,
-then the client authenticates with its certificate containing its public key and the digital signature of the issuer.
-2. Communicating entities verify the identity of the other one by verifying the signature of the certificate against their set of trusted certificates.
-3. The receiver of the public key establishes an encrypted communication channel with the sender of the key by
+3. The client verifies the server certificate.
+4. If the server requests a client certificate,
+then the client authenticates with its digital certificate.
+Each certificate contains its public key, a reference to its issuer,
+and the digital signature of the issuer.
+1. Communicating entities verify the identity of the other one by verifying the signature of the certificate against their set of trusted certificates.
+2. The receiver of the public key establishes an encrypted communication channel with the sender of the key by
     - encrypting a cryptographically secure random number with the public key or
     - securely generating a cryptographically secure random number
-4. The sender decrypts the encrypted challenge and generates the correct answer.
+3. The sender decrypts the encrypted challenge and generates the correct answer.
 
 You can see this with the command
 `echo Q | openssl s_client -msg openssl.org:443 | grep TLS`.
