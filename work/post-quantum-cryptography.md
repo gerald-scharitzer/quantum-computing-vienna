@@ -10,7 +10,7 @@ beyond the point in time where have effective and efficient quantum computing sy
 
 It is "quantum-safe", because it carries the practical safety of effective and efficient cryptography into the quantum era.
 
-It is "quantum-resistant" in as much as classic cryptography is resistant to classic analysis.
+It is "quantum-resistant" in as much as classic cryptography is resistant to classic cryptanalysis, where one-way functions make it theoretically possible, but practically infeasible to compute the input from the output.
 
 # Objective
 
@@ -34,10 +34,13 @@ authenticates with its digital certificate.
 3. The client verifies the server certificate.
 4. If the server requests a client certificate,
 then the client authenticates with its digital certificate.
+
 Each certificate contains its public key, a reference to its issuer,
 and the digital signature of the issuer.
-1. Communicating entities verify the identity of the other one by verifying the signature of the certificate against their set of trusted certificates.
-2. The receiver of the public key establishes an encrypted communication channel with the sender of the key by
+
+Communicating entities verify the identity of the other one by verifying the signature of the certificate against their set of trusted certificates.
+
+5. The client establishes an encrypted communication channel with the server, based on the public key of the server, by
     - encrypting a cryptographically secure random number with the public key or
     - securely generating a cryptographically secure random number
 3. The sender decrypts the encrypted challenge and generates the correct answer.
