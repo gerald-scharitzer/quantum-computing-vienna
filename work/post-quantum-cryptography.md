@@ -42,7 +42,8 @@ Communicating entities verify the identity of the other one by verifying the sig
 
 5. The client establishes an encrypted communication channel with the server, based on the public key of the server, by
     - encrypting a cryptographically secure random number with the public key or
-    - securely generating a cryptographically secure random number
+    - securely generating a cryptographically random session key
+6. The client and server generate the session key from the exchanged random numbers.
 3. The sender decrypts the encrypted challenge and generates the correct answer.
 
 You can see this with the command
