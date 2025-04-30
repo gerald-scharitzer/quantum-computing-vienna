@@ -28,9 +28,8 @@ but cryptography comes with others as well.
 Transport Layer Security (TLS) establishes secure communication sessions
 with its handshake algorithm.
 
-1. The client requests a TLS connection and sends a list of supported cipher suites. These are combinations of symmetric key encryption algorithms, message authentication codes, key exchange algorithms, and parameters.
-2. The server sends which cipher suite it picked and
-authenticates with its digital certificate.
+1. The client requests a TLS connection and sends a list of supported cipher suites (TLS Handshake ClientHello message). These are combinations of symmetric key encryption algorithms, message authentication codes, key exchange algorithms, and parameters.
+2. The server sends which cipher suite it picked (message Handshake ServerHello) and authenticates with its digital certificate (message Handshake Certificate).
 3. The client verifies the server certificate.
 4. If the server requests a client certificate,
 then the client authenticates with its digital certificate.
@@ -40,14 +39,28 @@ and the digital signature of the issuer.
 
 Communicating entities verify the identity of the other one by verifying the signature of the certificate against their set of trusted certificates.
 
-5. The client establishes an encrypted communication channel with the server, based on the public key of the server, by
+5. The client establishes an encrypted communication channel with the server, based on the public key of this server, by
     - encrypting a cryptographically secure random number with the public key or
     - securely generating a cryptographically random session key
-6. The client and server generate the session key from the exchanged random numbers.
-3. The sender decrypts the encrypted challenge and generates the correct answer.
+6. In both cases the client and server generate the session key from the exchanged random numbers.
+7. The remaining communication is private, because it is encrypted with a random symmetric key, which is known to the two communicating entities only.
 
 You can see this with the command
 `echo Q | openssl s_client -msg openssl.org:443 | grep TLS`.
+
+That looks similar to this.
+```
+>>> TLS 1.3, Handshake, ClientHello
+<<< TLS 1.3, Handshake, ServerHello
+<<< TLS 1.3, Handshake, EncryptedExtensions
+<<< TLS 1.3, Handshake, Certificate
+<<< TLS 1.3, Handshake, CertificateVerify
+<<< TLS 1.3, Handshake, Finished
+>>> TLS 1.3, ChangeCipherSpec
+>>> TLS 1.3, Handshake, Finished
+New, TLSv1.3, Cipher is ****************
+>>> TLS 1.3, Alert, warning close_notify
+```
 
 ## Cryptographic Hash Functions (CHFs)
 
