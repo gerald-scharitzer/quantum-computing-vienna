@@ -29,7 +29,7 @@ Transport Layer Security (TLS) establishes secure communication sessions
 with its handshake algorithm.
 
 1. The client requests a TLS connection and sends a list of supported cipher suites (TLS Handshake ClientHello message). These are combinations of symmetric key encryption algorithms, message authentication codes, key exchange algorithms, and parameters.
-2. The server sends which cipher suite it picked (message Handshake ServerHello) and authenticates with its digital certificate (message Handshake Certificate).
+2. The server sends which cipher suite it picked (ServerHello message) and authenticates with its digital certificate (Certificate message).
 3. The client verifies the server certificate.
 4. If the server requests a client certificate,
 then the client authenticates with its digital certificate.
@@ -77,6 +77,10 @@ These one-way functions, based on the amount of computation per input length, ma
 The effort to find the input grows exponentially with the length of the hash value.
 It is statistically much more probable to find an input that results in the same output (birthday attack), which halves the effective hash size.
 Doubling the hash size restores the security level.
+
+## Symmetric Key Cryptography
+
+provides privacy by encrypting the messages with a relatively short key lengths.
 
 # Quantum Cryptanalysis
 
