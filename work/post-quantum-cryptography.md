@@ -115,6 +115,9 @@ where `n` is the key size in bit.
 
 1925: The [methods of quantum mechanics are developed](https://documents.un.org/doc/undoc/ltd/n24/131/80/pdf/n2413180.pdf).
 
+1976: The first asymmetric (public key) cryptosystem [Diffie-Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) authenticates communicating partners and generates secret keys, that are known by these authenticated communicating partners only.
+It can do so over an insecure channel, because reading all key exchange messages does not reveal all required information.
+
 ...
 
 2025: The [International Year of Quantum Science and Technology 2025](https://quantum2025.org/)
