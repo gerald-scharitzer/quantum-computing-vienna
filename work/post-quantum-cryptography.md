@@ -115,14 +115,36 @@ where `n` is the key size in bit.
 
 1925: The [methods of quantum mechanics are developed](https://documents.un.org/doc/undoc/ltd/n24/131/80/pdf/n2413180.pdf).
 
-1976: The first asymmetric (public key) cryptosystem [Diffie-Hellman key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) authenticates communicating partners and generates secret keys, that are known by these authenticated communicating partners only.
+1976: The first asymmetric (public key) cryptosystem [Diffie-Hellman (DH) key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) authenticates communicating partners and generates secret keys, that are known by these authenticated communicating partners only.
 It can do so over an insecure channel, because reading all key exchange messages does not reveal all required information.
 
-1977: The asymmetric RSA algorithm encrypts and decrypts, and thus enables digital signatures.
+1977: The asymmetric [cryptosystem Rivest–Shamir–Adleman (RSA)](https://en.wikipedia.org/wiki/RSA_cryptosystem) encrypts and decrypts, and thus enables digital signatures, such that the private key is needed to create the signature.
 
-...
+1994: Peter Shor invents [Shor's algorithm](https://en.wikipedia.org/wiki/Shor%27s_algorithm), which breaks both DH and RSA in polynomial time on a quantum computer with sufficient capacity.
+
+1998: The first quantum computer is created and its size is 2 qubits.
+
+2016: NIST starts the project [Post-Quantum Cryptography Standardization](https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization) to develop quantum-safe asymmetric encryption and key exchange algorithms.
+
+2020: Quantum computers reach a quantum volume of 2 to the 4th power.
+
+2023: There are quantum computers with 1180 qubits now.
+
+2024: NIST releases the first [post-quantum cryptography standards](https://csrc.nist.gov/Projects/post-quantum-cryptography/selected-algorithms) for key exchange and digital signatures.
+
+2024: Quantum computers reach a quantum volume of 2 to the 20th power. That is an increment of computing capacity by a factor of approximately 65000 in four years, or a factor of 16 per year.
 
 2025: The [International Year of Quantum Science and Technology 2025](https://quantum2025.org/)
+
+# Fun Facts
+
+April 14 is Quantum Day, because 4.14 is the [Planck Constant](https://en.wikipedia.org/wiki/Planck_constant) in electronvolt seconds, rounded to two fractional digits.
+
+The Crystals algorithms are named Dilithium and Kyber. Both are crystals from science fiction.
+
+Dilithium
+
+Kyber
 
 # References
 
