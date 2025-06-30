@@ -118,7 +118,7 @@ where `n` is the key size in bit.
 1976: The first asymmetric (public key) cryptosystem [Diffie-Hellman (DH) key exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange) authenticates communicating partners and generates secret keys, that are known by these authenticated communicating partners only.
 It can do so over an insecure channel, because reading all key exchange messages does not reveal all required information.
 
-1977: The asymmetric [cryptosystem Rivest–Shamir–Adleman (RSA)](https://en.wikipedia.org/wiki/RSA_cryptosystem) encrypts and decrypts, and thus enables digital signatures, such that the private key is needed to create the signature.
+1977: The asymmetric [cryptosystem Rivest–Shamir–Adleman (RSA)](https://en.wikipedia.org/wiki/RSA_cryptosystem) encrypts and decrypts, and thus enables digital signatures, such that the private key is needed to create the signature and one can verify with the public key, whether the private key was used.
 
 1994: Peter Shor invents [Shor's algorithm](https://en.wikipedia.org/wiki/Shor%27s_algorithm), which breaks both DH and RSA in polynomial time on a quantum computer with sufficient capacity.
 
@@ -140,9 +140,9 @@ It can do so over an insecure channel, because reading all key exchange messages
 
 April 14 is Quantum Day, because 4.14 is the [Planck Constant](https://en.wikipedia.org/wiki/Planck_constant) in electronvolt seconds, rounded to two fractional digits.
 
-The Crystals algorithms are named Dilithium and Kyber. Both are crystals from science fiction.
+The Crystals algorithms are named Dilithium and Kyber. Both are fictional crystals from science fiction.
 
-Dilithium
+Dilithium is used to control the matter anti-matter annihilation in space ship's warp cores.
 
 Kyber
 
