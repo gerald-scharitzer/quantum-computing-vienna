@@ -5,8 +5,7 @@ provides key exchange and signature algorithms that [resist both classic and qua
 
 ⚠️ **Construction Site** ⚠️
 
-It is "post-quantum", because it extends cryptography into the future,
-beyond the point in time where have effective and efficient quantum computing systems.
+It is "post-quantum", because it extends cryptography into the future, beyond the point in time from where have effective and efficient quantum computing systems.
 
 It is "quantum-safe", because it carries the practical safety of effective and efficient cryptography into the quantum era.
 
@@ -16,12 +15,11 @@ It is "quantum-resistant" in as much as classic cryptography is resistant to cla
 
 Large parts of our information society rely on the following capabilities of cryptography.
 
-- Authenticity: We verify that we communicate with the right entity, before we send content.
-- Integrity: We verify that the message we received is the one sent.
+- Authenticity: We verify that we communicate with the right entity, before we send or receive content.
+- Integrity: We verify that the message we received is the one that was sent.
 - Privacy: We communicate with each other and the content is known to us only.
 
-This context focuses on these three capabilities,
-but cryptography comes with others as well.
+This context focuses on these three capabilities, but cryptography comes with others as well.
 
 # Classic Method
 
