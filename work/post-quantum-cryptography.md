@@ -9,7 +9,7 @@ It is "post-quantum", because it extends cryptography into the future, beyond th
 
 It is "quantum-safe", because it carries the practical safety of effective and efficient cryptography into the quantum era.
 
-It is "quantum-resistant" in as much as classic cryptography is resistant to classic cryptanalysis, where one-way functions make it theoretically possible, but practically infeasible to compute the input from the output.
+It is "quantum-resistant" in as much as classic cryptography is resistant to classic cryptanalysis.
 
 # Objective
 
@@ -65,6 +65,7 @@ New, TLSv1.3, Cipher is ****************
 enable data integrity checks by identifying with high probability,
 whether a data set was changed or not,
 based on the single input of the data set itself only.
+They are one-way functions and make it theoretically possible, but practically infeasible to compute the input from the output.
 Together with asymmetric key cryptography they enable digital signatures
 by verifying with high probability,
 whether the data was processed by something with access to a specific private key.
