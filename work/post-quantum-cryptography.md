@@ -135,6 +135,14 @@ It can do so over an insecure channel, because reading all key exchange messages
 
 2025: The [International Year of Quantum Science and Technology 2025](https://quantum2025.org/)
 
+# Implementations
+
+[Open Quantum Safe (OQS)](https://openquantumsafe.org/) maintains [liboqs](https://openquantumsafe.org/liboqs/) and integrations into major [applications and protocols](https://openquantumsafe.org/applications/).
+
+[PQ Code Package (PQCP)](https://github.com/pq-code-package) implements the [NIST FIPS 203 and 204](https://csrc.nist.gov/publications/fips).
+
+Both OQS and PQCP are projects of the [Post-Quantum Cryptography Alliance (PQCA)](https://pqca.org/).
+
 # Fun Facts
 
 April 14 is Quantum Day, because 4.14 is the [Planck Constant](https://en.wikipedia.org/wiki/Planck_constant) in electronvolt seconds, rounded to two fractional digits.
