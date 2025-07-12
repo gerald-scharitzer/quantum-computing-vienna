@@ -11,6 +11,12 @@ It is "quantum-safe", because it carries the practical safety of effective and e
 
 It is "quantum-resistant" in as much as classic cryptography is resistant to classic cryptanalysis.
 
+# Disclaimer
+
+This my private rationale on post-quantum cryptography.
+
+I do not recommend anything to anyone in this matter.
+
 # Objective
 
 Large parts of our information society rely on the following capabilities of cryptography.
@@ -142,6 +148,13 @@ It can do so over an insecure channel, because reading all key exchange messages
 [PQ Code Package (PQCP)](https://github.com/pq-code-package) implements the [NIST FIPS 203 and 204](https://csrc.nist.gov/publications/fips).
 
 Both OQS and PQCP are projects of the [Post-Quantum Cryptography Alliance (PQCA)](https://pqca.org/).
+
+There is a workgroup on [Quantum-safe Security](https://cloudsecurityalliance.org/research/working-groups/quantum-safe-security) at the Cloud Security Alliance.
+
+# Conclusion
+
+Even without the post-quantum cryptographic algorithms, there is value in knowing where you are using which cryptographic algorithms, such that you can change them effectively.
+This leads to crypto-agility.
 
 # Fun Facts
 
