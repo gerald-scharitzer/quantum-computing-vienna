@@ -36,8 +36,9 @@ with its [handshake algorithm](https://datatracker.ietf.org/doc/html/rfc8446#sec
 2. The server sends which cipher suite it picked (`ServerHello` message).
 3. As of here the server communicates encrypted and sends its extension list (`EncryptedExtensions` message).
 4. The server authenticates with its digital certificate (`Certificate` message) and the proof that it posesses the matching private key (`CertificateVerify` message).
-5. The client verifies the server certificate.
-6. If the server requests a client certificate,
+5. The server concludes its part of the handshake (`Finished` message).
+6. The client verifies the server certificate.
+7. If the server requests a client certificate,
 then the client authenticates with its digital certificate.
 
 Each certificate contains its public key, a reference to its issuer,
@@ -45,11 +46,11 @@ and the digital signature of the issuer.
 
 Communicating entities verify the identity of the other one by verifying the signature of the certificate against their set of trusted certificates.
 
-7. The client establishes an encrypted communication channel with the server, based on the public key of this server, by
+8. The client establishes an encrypted communication channel with the server, based on the public key of this server, by
     - encrypting a cryptographically secure random number with the public key or
     - securely generating a cryptographically random session key
-8. In both cases the client and server generate the session key from the exchanged random numbers.
-9. The remaining communication is private, because it is encrypted with a random symmetric key, which is known to the two communicating entities only.
+9. In both cases the client and server generate the session key from the exchanged random numbers.
+10. The remaining communication is private, because it is encrypted with a random symmetric key, which is known to the two communicating entities only.
 
 You can see this with the command
 `echo Q | openssl s_client -msg openssl.org:443 | grep TLS`.
