@@ -152,7 +152,15 @@ It can do so over an insecure channel, because reading all key exchange messages
 
 Both OQS and PQCP are projects of the [Post-Quantum Cryptography Alliance (PQCA)](https://pqca.org/).
 
+# Initiatives
+
 There is a workgroup on [Quantum-safe Security](https://cloudsecurityalliance.org/research/working-groups/quantum-safe-security) at the Cloud Security Alliance.
+
+The Cybersecurity & Infrastructure Security Agency (CISA) of the United States Government runs a [Post-Quantum Cryptography Initiative](https://www.cisa.gov/quantum).
+
+The [Quantum Europe Strategy](https://digital-strategy.ec.europa.eu/en/library/quantum-europe-strategy) reads:
+
+> "the EU and its Member States are now implementing the post-quantum cryptography [Recommendation](https://digital-strategy.ec.europa.eu/en/library/recommendation-coordinated-implementation-roadmap-transition-post-quantum-cryptography) and have just published a [Roadmap](https://digital-strategy.ec.europa.eu/en/news/eu-reinforces-its-cybersecurity-post-quantum-cryptography) for the transition to post-quantum cryptography."
 
 # Conclusion
 
