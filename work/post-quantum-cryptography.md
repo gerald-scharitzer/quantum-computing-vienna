@@ -158,6 +158,8 @@ There is a workgroup on [Quantum-safe Security](https://cloudsecurityalliance.or
 
 The Cybersecurity & Infrastructure Security Agency (CISA) of the United States Government runs a [Post-Quantum Cryptography Initiative](https://www.cisa.gov/quantum).
 
+The [Public Key Infrastructure Consortium (PKI Consortium)](https://pkic.org/) has a [Post-Quantum Cryptography Working Group](https://pkic.org/wg/pqc/charter/) which maintains a [PQC Capabilities Matrix (PQCCM)](https://pkic.org/pqccm/) of support for [Post Quantum Cryptography](https://pkic.org/pqccm/).
+
 The [Quantum Europe Strategy](https://digital-strategy.ec.europa.eu/en/library/quantum-europe-strategy) reads:
 
 > "the EU and its Member States are now implementing the post-quantum cryptography [Recommendation](https://digital-strategy.ec.europa.eu/en/library/recommendation-coordinated-implementation-roadmap-transition-post-quantum-cryptography) and have just published a [Roadmap](https://digital-strategy.ec.europa.eu/en/news/eu-reinforces-its-cybersecurity-post-quantum-cryptography) for the transition to post-quantum cryptography."
