@@ -19,11 +19,12 @@ I do not recommend anything to anyone in this matter.
 
 # Objective
 
-Large parts of our information society rely on the following capabilities of cryptography.
+Large parts of our information society rely on the following [capabilities of cryptography](https://pkic.org/#public-key-infrastructure).
 
 - Authenticity: We verify that we communicate with the right entity, before we send or receive content.
 - Integrity: We verify that the message we received is the one that was sent.
-- Privacy: We communicate with each other and the content is known to us only.
+- Confidentiality: We communicate with each other and the content is known to us only.
+- Non-repudiation: We know who said what.
 
 Cryptography comes with other capabilities as well, but this context focuses on these three capabilities.
 
