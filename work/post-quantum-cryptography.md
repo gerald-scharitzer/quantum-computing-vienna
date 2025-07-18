@@ -26,7 +26,13 @@ Large parts of our information society rely on the following [capabilities of cr
 - Confidentiality: We communicate with each other and the content is known to us only.
 - Non-repudiation: We know who said what.
 
-Cryptography comes with other capabilities as well, but this context focuses on these three capabilities.
+Cryptography comes with other capabilities as well, but this context focuses on these capabilities for which we use the following features.
+
+| Capability      | Cryptographic Hash Functions | Symmetric Encryption | Asymmetric Encryption |
+|-----------------|------------------------------|----------------------|-----------------------|
+| Authenticity    |                              |                      |                       |
+| Integrity       |                              |                      |                       |
+| Confidentiality |                              |                      |                       |
 
 # Classic Method
 
