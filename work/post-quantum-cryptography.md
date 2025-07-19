@@ -30,9 +30,10 @@ Cryptography comes with other capabilities as well, but this context focuses on 
 
 | Capability      | Cryptographic Hash Functions | Symmetric Encryption | Asymmetric Encryption |
 |-----------------|------------------------------|----------------------|-----------------------|
-| Authenticity    |                              |                      |                       |
-| Integrity       |                              |                      |                       |
-| Confidentiality |                              |                      |                       |
+| Authenticity    | uses                         |                      | uses                  |
+| Integrity       | uses                         |                      |                       |
+| Confidentiality |                              | uses                 | uses                  |
+| Non-repudiation | uses                         |                      | uses                  |
 
 # Classic Method
 
@@ -92,6 +93,12 @@ These one-way functions, based on the amount of computation per input length, ma
 The effort to find the input grows exponentially with the length of the hash value.
 It is statistically much more probable to find an input that results in the same output (birthday attack), which halves the effective hash size.
 Doubling the hash size restores the security level.
+
+## Applications
+
+CHFs map (potentially large) data sets (like [OCI images](https://github.com/opencontainers/image-spec/blob/v1.0.1/descriptor.md#digests) and AI models) to defined and relatively short fixed-length numbers.
+
+Authenticity uses CHFs and encrypts the hash value to sign messages.
 
 ## Symmetric Key Cryptography
 
