@@ -5,7 +5,8 @@ provides key exchange and signature algorithms that [resist both classic and qua
 
 ⚠️ **Construction Site** ⚠️
 
-It is "post-quantum", because it extends cryptography into the future, beyond the point in time from where have effective and efficient quantum computing systems.
+It is "post-quantum", because it extends cryptography into the future,
+beyond the point in time from where have effective and efficient quantum computing systems.
 
 It is "quantum-safe", because it carries the practical safety of effective and efficient cryptography into the quantum era.
 
@@ -26,7 +27,8 @@ Large parts of our information society rely on the following [capabilities of cr
 - Confidentiality: We communicate with each other and the content is known to us only.
 - Non-repudiation: We know who said what.
 
-Cryptography comes with other capabilities as well, but this context focuses on these capabilities for which we use the following features.
+Cryptography comes with other capabilities as well,
+but this context focuses on these capabilities for which we use the following features.
 
 | Capability      | Cryptographic Hash Functions | Symmetric Encryption | Asymmetric Encryption |
 |-----------------|------------------------------|----------------------|-----------------------|
@@ -37,10 +39,10 @@ Cryptography comes with other capabilities as well, but this context focuses on 
 
 # Classic Method
 
-Transport Layer Security (TLS) establishes secure communication sessions
-with its [handshake algorithm](https://datatracker.ietf.org/doc/html/rfc8446#section-2).
+Transport Layer Security (TLS) establishes secure communication sessions with its [handshake algorithm](https://datatracker.ietf.org/doc/html/rfc8446#section-2).
 
-1. The client requests a TLS connection and sends a list of supported cipher suites (TLS Handshake `ClientHello` message). These are combinations of symmetric key encryption algorithms, message authentication codes, key exchange algorithms, and parameters.
+1. The client requests a TLS connection and sends a list of supported cipher suites (TLS Handshake `ClientHello` message).
+These are combinations of symmetric key encryption algorithms, message authentication codes, key exchange algorithms, and parameters.
 2. The server sends which cipher suite it picked (`ServerHello` message).
 3. As of here the server communicates encrypted and sends its extension list (`EncryptedExtensions` message).
 4. The server authenticates with its digital certificate (`Certificate` message) and the proof that it posesses the matching private key (`CertificateVerify` message).
@@ -82,13 +84,12 @@ New, TLSv1.3, Cipher is ****************
 enable data integrity checks by identifying with high probability,
 whether a data set was changed or not,
 based on the single input of the data set itself only.
-They are one-way functions and make it theoretically possible, but practically infeasible to compute the input from the output.
-Together with asymmetric key cryptography they enable digital signatures
-by verifying with high probability,
+They are one-way functions and make it theoretically possible,
+but practically infeasible to compute the input from the output.
+Together with asymmetric key cryptography they enable digital signatures by verifying with high probability,
 whether the data was processed by something with access to a specific private key.
 
-CHFs rely on efficiently mapping long input values to short output values
-and varying greatly with small changes to the input.
+CHFs rely on efficiently mapping long input values to short output values and varying greatly with small changes to the input.
 These one-way functions, based on the amount of computation per input length, make it hard to find the input from the output (pre-image attack).
 The effort to find the input grows exponentially with the length of the hash value.
 It is statistically much more probable to find an input that results in the same output (birthday attack), which halves the effective hash size.
@@ -96,7 +97,7 @@ Doubling the hash size restores the security level.
 
 ## Applications
 
-CHFs map (potentially large) data sets (like [OCI images](https://github.com/opencontainers/image-spec/blob/v1.0.1/descriptor.md#digests) and AI models) to defined and relatively short fixed-length numbers.
+CHFs map (potentially large) data sets (like [OCI images](https://github.com/opencontainers/image-spec/blob/v1.1.1/descriptor.md#digests) and [Git objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)) to defined and relatively short fixed-length numbers.
 
 Authenticity uses CHFs and encrypts the hash value to sign messages.
 
@@ -106,8 +107,7 @@ provides privacy by encrypting the messages with a relatively short key lengths.
 
 # Quantum Cryptanalysis
 
-The classic cryptographic algorithms that we rely on today are affected by
-quantum computers and algorithms to varying extents.
+The classic cryptographic algorithms that we rely on today are affected by quantum computers and algorithms to varying extents.
 
 ## Grover's Algorithm
 
@@ -153,8 +153,11 @@ It can do so over an insecure channel, because reading all key exchange messages
 2023: There are quantum computers with 1180 qubits now.
 
 2024: NIST releases the first [post-quantum cryptography standards](https://csrc.nist.gov/Projects/post-quantum-cryptography/selected-algorithms) for key exchange and digital signatures.
+The [Module-Lattice-Based Key-Encapsulation Mechanism Standard (FIPS 203)](https://csrc.nist.gov/pubs/fips/203/final) ML-KEM is derived from CRYSTALS-Kyber.
+The [Module-Lattice-Based Digital Signature Standard (FIPS 204)](https://csrc.nist.gov/pubs/fips/204/final) ML-DSA is derived from CRYSTALS-Dilithium.
 
-2024: Quantum computers reach a quantum volume of 2 to the 20th power. That is an increment of computing capacity by a factor of approximately 65000 in four years, or a factor of 16 per year.
+2024: Quantum computers reach a quantum volume of 2 to the 20th power.
+That is an increment of computing capacity by a factor of approximately 65000 in four years, or a factor of 16 per year.
 
 2025: The [International Year of Quantum Science and Technology 2025](https://quantum2025.org/)
 
@@ -166,7 +169,11 @@ It can do so over an insecure channel, because reading all key exchange messages
 
 Both OQS and PQCP are projects of the [Post-Quantum Cryptography Alliance (PQCA)](https://pqca.org/).
 
+The [Java Development Kit 24](https://openjdk.org/projects/jdk/24/) implements ML-KEM and ML-DSA.
+
 # Initiatives
+
+The Internet Engineering Task Force work group [Limited Additional Mechanisms for PKIX and SMIME (lamps)](https://datatracker.ietf.org/wg/lamps/documents/) specifies ML-KEM and ML-DSA in X.509 certificates for TLS.
 
 There is a workgroup on [Quantum-safe Security](https://cloudsecurityalliance.org/research/working-groups/quantum-safe-security) at the Cloud Security Alliance.
 
@@ -180,14 +187,17 @@ The [Quantum Europe Strategy](https://digital-strategy.ec.europa.eu/en/library/q
 
 # Conclusion
 
-Even without the post-quantum cryptographic algorithms, there is value in knowing where you are using which cryptographic algorithms, such that you can change them effectively.
+Even without the post-quantum cryptographic algorithms,
+there is value in knowing where you are using which cryptographic algorithms,
+such that you can change them effectively.
 This leads to crypto-agility.
 
 # Fun Facts
 
 April 14 is Quantum Day, because 4.14 is the [Planck Constant](https://en.wikipedia.org/wiki/Planck_constant) in electronvolt seconds, rounded to two fractional digits.
 
-The Crystals algorithms are named Dilithium and Kyber. Both are fictional crystals from science fiction.
+The Crystals algorithms are named Dilithium and Kyber.
+Both are fictional crystals from science fiction.
 
 Dilithium is used to control the matter anti-matter annihilation in space ship's warp cores.
 
