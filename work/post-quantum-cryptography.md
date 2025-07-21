@@ -20,7 +20,8 @@ I do not recommend anything to anyone in this matter.
 
 # Objective
 
-Large parts of our information society rely on the following [capabilities of cryptography](https://pkic.org/#public-key-infrastructure).
+Large parts of our information society rely on secure communications,
+which in turn rely on the following [capabilities of cryptography](https://pkic.org/#public-key-infrastructure).
 
 - Authenticity: We verify that we communicate with the right entity, before we send or receive content.
 - Integrity: We verify that the message we received is the one that was sent.
@@ -79,6 +80,8 @@ New, TLSv1.3, Cipher is ****************
 >>> TLS 1.3, Alert, warning close_notify
 ```
 
+This uses the following cryptographic features.
+
 ## Cryptographic Hash Functions (CHFs)
 
 enable data integrity checks by identifying with high probability,
@@ -95,11 +98,17 @@ The effort to find the input grows exponentially with the length of the hash val
 It is statistically much more probable to find an input that results in the same output (birthday attack), which halves the effective hash size.
 Doubling the hash size restores the security level.
 
-## Applications
+### Applications
 
 CHFs map (potentially large) data sets (like [OCI images](https://github.com/opencontainers/image-spec/blob/v1.1.1/descriptor.md#digests) and [Git objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)) to defined and relatively short fixed-length numbers.
 
 Authenticity uses CHFs and encrypts the hash value to sign messages.
+
+Integrity uses CHFs to verify with very high probability,
+whether a message received is identical to the message sent.
+
+Non-repudiation uses CHFs to verify with very high probability,
+whether this message was sent from this entity.
 
 ## Symmetric Key Cryptography
 
