@@ -98,7 +98,7 @@ The effort to find the input grows exponentially with the length of the hash val
 It is statistically much more probable to find an input that results in the same output (birthday attack), which halves the effective hash size.
 Doubling the hash size restores the security level.
 
-### Applications
+### CHF Applications
 
 CHFs map (potentially large) data sets (like [OCI images](https://github.com/opencontainers/image-spec/blob/v1.1.1/descriptor.md#digests) and [Git objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)) to defined and relatively short fixed-length numbers.
 
@@ -112,7 +112,16 @@ whether this message was sent from this entity.
 
 ## Symmetric Key Cryptography
 
-provides privacy by encrypting the messages with a relatively short key lengths.
+provides privacy by encrypting the messages.
+It encrypts with relatively short key lengths, securely and efficiently,
+but it needs a shared secret key first.
+
+## Asymmetric Key Cryptography
+
+generates shared secret keys that are known to the communicating parties only.
+
+It also encrypts messages without a shared secret,
+by sending public keys and protecting private keys.
 
 # Quantum Cryptanalysis
 
