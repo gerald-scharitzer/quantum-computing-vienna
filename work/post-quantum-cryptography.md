@@ -87,8 +87,10 @@ This uses the following cryptographic features.
 enable data integrity checks by identifying with high probability,
 whether a data set was changed or not,
 based on the single input of the data set itself only.
-They are one-way functions and make it theoretically possible,
-but practically infeasible to compute the input from the output.
+They are one-way functions for which there is no publicly known way to compute an input from the output efficiently.
+They map a larger input set to a smaller output set. Therefore they are not injective and there is no inverse function.
+The effort to find an input grows exponentially with the hash length.
+This makes it practically infeasible to find a matching input.
 Together with asymmetric key cryptography they enable digital signatures by verifying with high probability,
 whether the data was processed by something with access to a specific private key.
 
