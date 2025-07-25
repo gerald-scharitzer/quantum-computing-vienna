@@ -112,11 +112,15 @@ whether a message received is identical to the message sent.
 Non-repudiation uses CHFs to verify with very high probability,
 whether this message was sent from this entity.
 
-## Symmetric Key Cryptography
+## Symmetric Key Cryptography (SKC)
 
 provides privacy by encrypting the messages.
 It encrypts with relatively short key lengths, securely and efficiently,
 but it needs a shared secret key first.
+
+### SKC Applications
+
+Network content communication and disk encryption use the AES and other symmetric key algorithms.
 
 ## Asymmetric Key Cryptography
 
