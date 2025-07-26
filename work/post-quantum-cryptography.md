@@ -114,15 +114,15 @@ whether this message was sent from this entity.
 
 ## Symmetric Key Cryptography (SKC)
 
-provides privacy by encrypting the messages.
+provides confidentiality by encrypting the messages.
 It encrypts with relatively short key lengths, securely and efficiently,
 but it needs a shared secret key first.
 
 ### SKC Applications
 
-Network content communication and disk encryption use the AES and other symmetric key algorithms.
+Network content communication (data in transit) and storage encryption (data at rest) use symmetric key algorithms like the Advanced Encryption Standard (AES).
 
-## Asymmetric Key Cryptography
+## Asymmetric Key Cryptography (AKC)
 
 generates shared secret keys that are known to the communicating parties only.
 
@@ -135,7 +135,8 @@ The classic cryptographic algorithms that we rely on today are affected by quant
 
 ## Grover's Algorithm
 
-finds solutions for cryptographic hashes and symmetric keys in the square root of the hash size or key size respectively.
+finds solutions for cryptographic hashes and symmetric keys in the square root of the size of the value space of the hash size or key size respectively.
+While this provides a quadratic speed-up and halves the effective hash size or key size, it does not result in a different complexity class.
 This can be neutralized by simply doubling the key size.
 Enforcing the collision resistance of cryptographic hash functions (CHFs) already requires doubling the hash size, so Grover is neutralized for CHFs by this.
 
