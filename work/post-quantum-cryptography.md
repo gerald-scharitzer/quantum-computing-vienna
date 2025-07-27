@@ -140,6 +140,10 @@ While this provides a quadratic speed-up and halves the effective hash size or k
 This can be neutralized by simply doubling the key size.
 Enforcing the collision resistance of cryptographic hash functions (CHFs) already requires doubling the hash size, so Grover is neutralized for CHFs by this.
 
+There are 128-bit cryptographic hash funcions and symmetric key algorithms that are considered secure.
+There are also 256-bit variants of these, so we can actually double the size.
+One way to become quantum-safe is to use the already available 256-bit cryptographic hashes and symmetric keys.
+
 ## BHT Algorithm
 
 combines aspects of the birthday attack with Grover's algorithm.
