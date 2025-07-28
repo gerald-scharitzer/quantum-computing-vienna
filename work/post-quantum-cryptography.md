@@ -18,6 +18,8 @@ This my private rationale on post-quantum cryptography.
 
 I do not recommend anything to anyone in this matter.
 
+"post-quantum" means having arrived in the age of quantum computers.
+
 # Objective
 
 Large parts of our information society rely on secure communications,
@@ -140,9 +142,9 @@ While this provides a quadratic speed-up and halves the effective hash size or k
 This can be neutralized by simply doubling the key size.
 Enforcing the collision resistance of cryptographic hash functions (CHFs) already requires doubling the hash size, so Grover is neutralized for CHFs by this.
 
-There are 128-bit cryptographic hash funcions and symmetric key algorithms that are considered secure.
-There are also 256-bit variants of these, so we can actually double the size.
-One way to become quantum-safe is to use the already available 256-bit cryptographic hashes and symmetric keys.
+There are 128-bit symmetric key algorithms that are considered secure.
+There are also 256-bit variants of these, so we can actually double the key size.
+One way to become quantum-resistant is to use the already available 256-bit symmetric keys.
 
 ## BHT Algorithm
 
@@ -220,6 +222,13 @@ Even without the post-quantum cryptographic algorithms,
 there is value in knowing where you are using which cryptographic algorithms,
 such that you can change them effectively.
 This leads to crypto-agility.
+
+256-bit cryptographic hash functions can be considered already quantum-resistant.
+New data in transit and rest can already be made quantum-resistant,
+by encrypting it with 256-bit symmetric keys.
+Persistent data encrypted with 128-bit keys can already be made quantum-resistant,
+by decrypting it with the old 128-bit keys and then encrypting it with the new 256-bit keys.
+Asymmetric key cryptography needs the new algorithms implemented to become quantum-resistant.
 
 # Fun Facts
 
