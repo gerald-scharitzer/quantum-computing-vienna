@@ -90,7 +90,8 @@ enable data integrity checks by identifying with high probability,
 whether a data set was changed or not,
 based on the single input of the data set itself only.
 They are one-way functions for which there is no publicly known way to compute an input from the output efficiently.
-They map a larger input set to a smaller output set. Therefore they are not injective and there is no inverse function.
+They map a very large input set to a small output set.
+Therefore they are far from injective and there is no inverse function.
 The effort to find an input grows exponentially with the hash length.
 This makes it practically infeasible to find a matching input.
 Together with asymmetric key cryptography they enable digital signatures by verifying with high probability,
@@ -149,10 +150,12 @@ One way to become quantum-resistant is to use the already available 256-bit symm
 ## BHT Algorithm
 
 combines aspects of the birthday attack with Grover's algorithm.
-It theoretically splits the effective key length into 1/3,
+It theoretically splits the effective key size into 1/3,
 but that would require quantum random access memory (QRAM),
 which we do not have yet.
-Without QRAM it still splits the effective key length to 2/5.
+Without QRAM it still splits the effective key size to 2/5.
+This is a 40 % reduction of the effective key size compared to the 50 % by the birthday attack alone,
+but it is still considered secure.
 
 ## Shor's Algorithm
 
