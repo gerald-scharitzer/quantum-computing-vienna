@@ -159,13 +159,17 @@ but it is still considered secure.
 
 ## Shor's Algorithm
 
-finds solutions for asymmetric keys based on prime factoring and discrete logarithm in a polynomial of the key size instead of growing exponentially with the key size.
+finds solutions for asymmetric keys based on prime factoring or discrete logarithm in a polynomial of the key size instead of growing exponentially with the key size.
 
 Classic: Real number `r` times basis `b` raised by exponent `n`
 
 Shor: Real number `s` times basis `n` raised by exponent `e`
 
 where `n` is the key size in bit.
+
+This is a shift in complexity class from what is considered practically infeasible (exponential) to potentially possible (polynomial).
+
+It affects asymmetric key generation and data encryption based on prime factoring, discrete logarithm, and elliptic curves.
 
 # Timeline
 
