@@ -171,6 +171,8 @@ This is a shift in complexity class from what is considered practically infeasib
 
 It affects asymmetric key generation and data encryption based on prime factoring, discrete logarithm, and elliptic curves.
 
+Shor's algorithm is the reason why [quantum-resistant algorithms](https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization) were developed for digital signature, public-key encryption, and key-establishment.
+
 # Timeline
 
 1925: The [methods of quantum mechanics are developed](https://documents.un.org/doc/undoc/ltd/n24/131/80/pdf/n2413180.pdf).
