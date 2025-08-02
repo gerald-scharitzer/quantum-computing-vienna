@@ -173,6 +173,14 @@ It affects asymmetric key generation and data encryption based on prime factorin
 
 Shor's algorithm is the reason why [quantum-resistant algorithms](https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization) were developed for digital signature, public-key encryption, and key-establishment.
 
+# Quantum-Resistant Algorithms
+
+CHFs with a hash size of 256 bit are already used and considered quantum-resistant.
+
+SKC with a key size of 256 bit are already used and shall be a standard for quantum-resistant encryption.
+
+
+
 # Timeline
 
 1925: The [methods of quantum mechanics are developed](https://documents.un.org/doc/undoc/ltd/n24/131/80/pdf/n2413180.pdf).
