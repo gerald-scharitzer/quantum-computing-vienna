@@ -177,12 +177,18 @@ Shor's algorithm is the reason why [quantum-resistant algorithms](https://csrc.n
 
 CHFs with a hash size of 256 bit are already used and considered quantum-resistant.
 
-SKC algorithms with a key size of 256 bit are already used and should be the required minimun for quantum-resistant encryption.
+Symmetric key algorithms with a key size of 256 bit are already used and should be the required minimum for quantum-resistant encryption.
 
 AKC algorithms based on prime factorization (like RSA)
 or discrete logarithm problems (like Diffie-Hellmann and the Digital Signature Algorithm)
 or elliptic curves are not considered quantum-resistant.
 This required new algorithms, that are resistant to both, classic and quantum computers.
+
+The [NIST standards (FIPS)](https://csrc.nist.gov/publications/fips)
+- Module-Lattice-Based Key-Encapsulation Mechanism (FIPS 203)
+- Module-Lattice-Based Digital Signature (FIPS 204)
+- Stateless Hash-Based Digital Signature (FIPS 205)
+are used to make key protection and signing quantum-resistant as well.
 
 # Timeline
 
