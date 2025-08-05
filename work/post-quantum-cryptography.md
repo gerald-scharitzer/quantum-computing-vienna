@@ -190,6 +190,10 @@ The [NIST standards (FIPS)](https://csrc.nist.gov/publications/fips)
 - Stateless Hash-Based Digital Signature (FIPS 205)
 are used to make key protection and signing quantum-resistant as well.
 
+## Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM)
+
+was derived from the finalist algorithm CRYSTALS-Kyber and encrypts the secret key before sharing it.
+
 # Timeline
 
 1925: The [methods of quantum mechanics are developed](https://documents.un.org/doc/undoc/ltd/n24/131/80/pdf/n2413180.pdf).
