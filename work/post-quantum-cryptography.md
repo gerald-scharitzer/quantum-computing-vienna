@@ -193,6 +193,12 @@ are used to make key protection and signing quantum-resistant as well.
 ## Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM)
 
 was derived from the finalist algorithm CRYSTALS-Kyber and encrypts the secret key before sharing it.
+This practically enforces the confidentiality of secrets.
+Next is verifying the identities of the communicating parties.
+
+## Module-Lattice-Based Digital Signature (ML-DSA)
+
+was derived from the finalist algorithm CRYSTALS-Dilithium. ML-DSA generates and verifies digital signatures.
 
 # Timeline
 
