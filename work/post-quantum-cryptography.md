@@ -190,6 +190,10 @@ The [NIST standards (FIPS)](https://csrc.nist.gov/publications/fips)
 - Stateless Hash-Based Digital Signature (FIPS 205)
 are used to make key protection and signing quantum-resistant as well.
 
+The PKI Maturity Model of the PKI Consortium lists [implementations of the FIPS standards](https://pkic.org/pqccm/#capabilities).
+There is also a list of implementations of the selected algorithms; Kyber, Dilithium, and Sphincs+,
+but this list is not maintained.
+
 ## Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM)
 
 was derived from the finalist algorithm CRYSTALS-Kyber and encrypts the secret key before sharing it.
