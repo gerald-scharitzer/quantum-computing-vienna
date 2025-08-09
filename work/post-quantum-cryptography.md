@@ -193,6 +193,8 @@ are used to make key protection and signing quantum-resistant as well.
 The PKI Maturity Model of the PKI Consortium lists [implementations of the FIPS standards](https://pkic.org/pqccm/#capabilities).
 There is also a list of implementations of the selected algorithms; Kyber, Dilithium, and Sphincs+,
 but this list is not maintained.
+The Internet Engineering Task Force (IETF) propose standard [RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446) for the current version 1.3 of Transport Layer Security (TLS).
+This standard refers to the Internet Assigned Numbers Authority (IANA) for maintaining several registries of TLS constants.
 IANA marked its [TLS cipher suites](https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4) with Kyber as obsoleted by MLKEM.
 
 ## Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM)
