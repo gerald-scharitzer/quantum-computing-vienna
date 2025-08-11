@@ -196,7 +196,7 @@ but this list is not maintained.
 The Internet Engineering Task Force (IETF) propose standard [RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446) for the current version 1.3 of Transport Layer Security (TLS).
 This standard refers to the Internet Assigned Numbers Authority (IANA) for maintaining several registries of TLS constants.
 IANA marked its [TLS cipher suites](https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4) with Kyber as obsoleted by MLKEM.
-They define the TLS signature schemes `mldsa44`, `mldsa65`, and `mldsa87`, but none for SLH-DSA/SPHINCS+ (yet).
+They define the TLS signature schemes `mldsa44`, `mldsa65`, and `mldsa87`, but none for SLH-DSA or SPHINCS+ (yet).
 
 ## Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM)
 
@@ -206,11 +206,13 @@ Next is verifying the identities of the communicating parties.
 
 ## Module-Lattice-Based Digital Signature (ML-DSA)
 
-was derived from the finalist algorithm CRYSTALS-Dilithium. ML-DSA generates and verifies digital signatures.
+was derived from the finalist algorithm CRYSTALS-Dilithium.
+ML-DSA generates key pairs, signs messages, and verifies digital signatures.
 
 ## Stateless Hash-Based Digital Signature (SLH-DSA)
 
-was derived from the finalist algorithm SPHINCS+. SLH-DSA generates and verifies digital signatures.
+was derived from the finalist algorithm SPHINCS+.
+SLH-DSA generates and verifies digital signatures.
 
 ## Hamming Quasi-Cyclic (HQC)
 
