@@ -190,9 +190,6 @@ The [NIST standards (FIPS)](https://csrc.nist.gov/publications/fips)
 - Stateless Hash-Based Digital Signature (FIPS 205)
 are used to make key protection and signing quantum-resistant as well.
 
-The PKI Maturity Model of the PKI Consortium lists [implementations of the FIPS standards](https://pkic.org/pqccm/#capabilities).
-There is also a list of implementations of the selected algorithms; Kyber, Dilithium, and Sphincs+,
-but this list is not maintained.
 The Internet Engineering Task Force (IETF) propose standard [RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446) for the current version 1.3 of Transport Layer Security (TLS).
 This standard refers to the Internet Assigned Numbers Authority (IANA) for maintaining several registries of TLS constants.
 IANA marked its [TLS cipher suites](https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4) with Kyber as obsoleted by MLKEM.
@@ -257,6 +254,10 @@ That is an increment of computing capacity by a factor of approximately 65000 in
 
 # Implementations
 
+The PKI Maturity Model of the PKI Consortium lists [implementations of the FIPS standards](https://pkic.org/pqccm/#capabilities).
+There is also a list of [implementations of the selected draft algorithms](https://pkic.org/pqccm/draftalgorithms/);
+Kyber, Dilithium, and Sphincs+, but this list is not maintained.
+
 [Open Quantum Safe (OQS)](https://openquantumsafe.org/) maintains [liboqs](https://openquantumsafe.org/liboqs/) and integrations into major [applications and protocols](https://openquantumsafe.org/applications/).
 
 [PQ Code Package (PQCP)](https://github.com/pq-code-package) implements the [NIST FIPS 203 and 204](https://csrc.nist.gov/publications/fips).
@@ -264,6 +265,25 @@ That is an increment of computing capacity by a factor of approximately 65000 in
 Both OQS and PQCP are projects of the [Post-Quantum Cryptography Alliance (PQCA)](https://pqca.org/).
 
 The [Java Development Kit 24](https://openjdk.org/projects/jdk/24/) implements ML-KEM and ML-DSA.
+
+## Coverage
+
+Several major languages of the [IEEE Top Programming Languages 2024](https://spectrum.ieee.org/top-programming-languages-2024) ranking are covered by PQC implementations.
+
+| Language   | Post-Quantum Cryptography | TLS with PQC |
+| ---------- | ------------------------- | ------------ |
+| Python     | liboqs C library          | ?            |
+| Java       | Bouncy Castle and JDK     | ?            |
+| JavaScript | liboqs compiled to wasm   | ?            |
+| C++        | liboqs C library          | ?            |
+| TypeScript | liboqs compiled to wasm   | ?            |
+| C#         | Bouncy Castle             | ?            |
+| Go         | ?                         | ?            |
+| C          | liboqs C library          | ?            |
+| Rust       | ?                         | ?            |
+
+There are [Python bindings in liboqs](https://openquantumsafe.org/liboqs/wrappers.html).
+JavaScript can call the liboqs C library [compiled to web assembly](https://emscripten.org/).
 
 # Initiatives
 
