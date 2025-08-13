@@ -283,6 +283,8 @@ Several major languages of the [IEEE Top Programming Languages 2024](https://spe
 | Rust       | ?                         | ?            |
 
 There are [Python bindings in liboqs](https://openquantumsafe.org/liboqs/wrappers.html).
+Java can use the [Bouncy Castle Java](https://www.bouncycastle.org/documentation/documentation-java/#bouncy-castle-java-fips-documentation) libraries
+or the algorithms ML-KEM and ML-DSA (JEPs 496 and 497) in [JDK 24](https://openjdk.org/projects/jdk/24/).
 JavaScript can call the liboqs C library [compiled to web assembly](https://emscripten.org/).
 
 # Initiatives
