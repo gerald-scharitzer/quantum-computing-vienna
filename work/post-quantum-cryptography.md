@@ -273,20 +273,31 @@ Several major languages of the [IEEE Top Programming Languages 2024](https://spe
 | Language   | Post-Quantum Cryptography | TLS with PQC |
 | ---------- | ------------------------- | ------------ |
 | Python     | liboqs C library          | ?            |
-| Java       | Bouncy Castle and JDK     | ?            |
+| Java       | Bouncy Castle or JDK      | ?            |
 | JavaScript | liboqs compiled to wasm   | ?            |
 | C++        | liboqs C library          | ?            |
 | TypeScript | liboqs compiled to wasm   | ?            |
 | C#         | Bouncy Castle             | ?            |
-| Go         | ?                         | ?            |
+| Go         | liboqs C library or CIRCL | ?            |
 | C          | liboqs C library          | ?            |
-| Rust       | ?                         | ?            |
+| Rust       | liboqs C library          | ?            |
 
 There are [Python bindings in liboqs](https://openquantumsafe.org/liboqs/wrappers.html).
+
 Java can use the [Bouncy Castle Java](https://www.bouncycastle.org/documentation/documentation-java/#bouncy-castle-java-fips-documentation) libraries
 or the algorithms ML-KEM and ML-DSA (JEPs 496 and 497) in [JDK 24](https://openjdk.org/projects/jdk/24/).
+
 JavaScript can call the liboqs C library [compiled to web assembly](https://emscripten.org/).
-C++ can call the liboqs C library or others at higher protocol layers like the [OpenSSL libcrypto](https://docs.openssl.org/master/man7/ossl-guide-libcrypto-introduction/).
+
+C++ can call the liboqs C library, its [C++ bindings](https://openquantumsafe.org/liboqs/wrappers.html), or other libraries at higher protocol layers like [OpenSSL `libcrypto` and `libssl`](https://docs.openssl.org/master/man7/ossl-guide-libraries-introduction/).
+
+TypeScript as a superset of JavaScript can call the liboqs C library [compiled to web assembly](https://emscripten.org/).
+
+C# can use the [Bouncy Castle C# .NET](https://www.bouncycastle.org/documentation/documentation-c/#bouncy-castle-c-fips-documentation) libraries.
+
+Go can use [CIRCL](https://github.com/cloudflare/circl) or the [Go bindings in liboqs](https://openquantumsafe.org/liboqs/wrappers.html).
+
+Rust can use the [Rust bindings in liboqs](https://openquantumsafe.org/liboqs/wrappers.html) or the [`pgcrypto` crates](https://github.com/rustpq/pqcrypto).
 
 # Initiatives
 
