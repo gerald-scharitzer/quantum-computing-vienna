@@ -219,6 +219,10 @@ is another key encapsulation mechanism in the queue for standardization.
 
 is another digital signature algorithm in the queue for standardization.
 
+## eXtended Merkle Signature Scheme (XMSS)
+
+is another hash-based digital signature system.
+
 ## Hybrid Algorithms
 
 combine classic with quantum-resistant algorithms to mitigate the risk of possible weaknesses in the relatively new quantum-resitant algorithms with classic algorithms that are considered secure since many years.
@@ -305,6 +309,9 @@ Rust can use the [Rust bindings in liboqs](https://openquantumsafe.org/liboqs/wr
 The Internet Engineering Task Force work group [Limited Additional Mechanisms for PKIX and SMIME (lamps)](https://datatracker.ietf.org/wg/lamps/documents/) specifies ML-KEM and ML-DSA in X.509 certificates for TLS.
 
 There is a workgroup on [Quantum-safe Security](https://cloudsecurityalliance.org/research/working-groups/quantum-safe-security) at the Cloud Security Alliance.
+
+The Crypto Forum Research Group (CFRG) of the Internet Engineering Task Force (IETF) defined two [standards for stateful hash-based signature schemes](https://openquantumsafe.org/faq.html#what-is-the-status-of-pq-standardization), XMSS and LMS/HSS.
+[RFC 8391](https://datatracker.ietf.org/doc/html/rfc8391) defines XMSS, but that is a research RFC and not an engineering RFC.
 
 The Cybersecurity & Infrastructure Security Agency (CISA) of the United States Government runs a [Post-Quantum Cryptography Initiative](https://www.cisa.gov/quantum).
 
