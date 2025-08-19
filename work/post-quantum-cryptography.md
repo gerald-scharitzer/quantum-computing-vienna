@@ -223,6 +223,10 @@ is another digital signature algorithm in the queue for standardization.
 
 is another hash-based digital signature system.
 
+## Leighton-Micali Hash-Based Signature (LMS/HSS)
+
+is the Leighton-Micali Signature system (LMS) in the Hierarchical Signature System (HSS).
+
 ## Hybrid Algorithms
 
 combine classic with quantum-resistant algorithms to mitigate the risk of possible weaknesses in the relatively new quantum-resitant algorithms with classic algorithms that are considered secure since many years.
@@ -265,7 +269,7 @@ Kyber, Dilithium, and Sphincs+, but this list is not maintained.
 [Open Quantum Safe (OQS)](https://openquantumsafe.org/) maintains the [liboqs](https://openquantumsafe.org/liboqs/) C library and integrations into major [applications and protocols](https://openquantumsafe.org/applications/).
 This makes it potentially available for every platform with a working C compiler.
 
-[PQ Code Package (PQCP)](https://github.com/pq-code-package) implements the [NIST FIPS 203 and 204](https://csrc.nist.gov/publications/fips).
+[PQ Code Package (PQCP)](https://github.com/pq-code-package) implements the standards [NIST FIPS 203 and 204](https://csrc.nist.gov/publications/fips).
 
 Both OQS and PQCP are projects of the [Post-Quantum Cryptography Alliance (PQCA)](https://pqca.org/).
 
@@ -312,6 +316,7 @@ There is a workgroup on [Quantum-safe Security](https://cloudsecurityalliance.or
 
 The Crypto Forum Research Group (CFRG) of the Internet Engineering Task Force (IETF) defined two [standards for stateful hash-based signature schemes](https://openquantumsafe.org/faq.html#what-is-the-status-of-pq-standardization), XMSS and LMS/HSS.
 [RFC 8391](https://datatracker.ietf.org/doc/html/rfc8391) defines XMSS, but that is a research RFC and not an engineering RFC.
+The same is true for [RFC 8554](https://datatracker.ietf.org/doc/html/rfc8554), which defines LMS/HSS.
 
 The Cybersecurity & Infrastructure Security Agency (CISA) of the United States Government runs a [Post-Quantum Cryptography Initiative](https://www.cisa.gov/quantum).
 
