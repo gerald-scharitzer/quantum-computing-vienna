@@ -264,10 +264,10 @@ That is an increment of computing capacity by a factor of approximately 65000 in
 
 The PKI Maturity Model of the PKI Consortium lists [implementations of the FIPS standards](https://pkic.org/pqccm/#capabilities).
 There is also a list of [implementations of the selected draft algorithms](https://pkic.org/pqccm/draftalgorithms/);
-Kyber, Dilithium, and Sphincs+, but this list is not maintained.
+Kyber, Dilithium, and Sphincs+, but this list is not maintained anymore.
 
 [Open Quantum Safe (OQS)](https://openquantumsafe.org/) maintains the [liboqs](https://openquantumsafe.org/liboqs/) C library and integrations into major [applications and protocols](https://openquantumsafe.org/applications/).
-This makes it potentially available for every platform with a working C compiler.
+This makes it potentially available for every platform with a working C compiler and in turn every programming language that can call native functions, like Python with its [`ctypes` foreign function library](https://docs.python.org/3/library/ctypes.html) and Java with its [native interface JNI](https://docs.oracle.com/en/java/javase/21/docs/specs/jni/).
 
 [PQ Code Package (PQCP)](https://github.com/pq-code-package) implements the standards [NIST FIPS 203 and 204](https://csrc.nist.gov/publications/fips).
 
