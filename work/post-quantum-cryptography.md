@@ -328,6 +328,8 @@ The [Quantum Europe Strategy](https://digital-strategy.ec.europa.eu/en/library/q
 
 # Conclusion
 
+Implementations of post-quantum public key algorithms are just one of the steps towards quantum-safe communications.
+Integrating these implementations into protocols and runtimes is another step.
 Even without the post-quantum cryptographic algorithms,
 there is value in knowing where you are using which cryptographic algorithms,
 such that you can change them effectively.
