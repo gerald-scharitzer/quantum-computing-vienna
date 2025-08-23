@@ -329,8 +329,8 @@ The [Quantum Europe Strategy](https://digital-strategy.ec.europa.eu/en/library/q
 # Maturity
 
 Implementations of post-quantum public key algorithms are just one of the steps towards quantum-safe communications.
-Integrating these implementations into the protocols and runtimes is another step.
-TLS needs them for verifying identities and protecting private keys.
+Integrating these implementations into the currently used protocols and runtimes is another step.
+TLS needs these algorithms for verifying identities and protecting secret keys.
 Then they must be offered by default, such that compatible peers can use them.
 
 # Conclusion
