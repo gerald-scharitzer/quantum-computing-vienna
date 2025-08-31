@@ -190,10 +190,11 @@ The [NIST standards (FIPS)](https://csrc.nist.gov/publications/fips)
 - Stateless Hash-Based Digital Signature (FIPS 205)
 are used to make key protection and signing quantum-resistant as well.
 
-The Internet Engineering Task Force (IETF) propose standard [RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446) for the current version 1.3 of Transport Layer Security (TLS).
+The Internet Engineering Task Force (IETF) proposed standard [RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446) for the current version 1.3 of Transport Layer Security (TLS).
 This standard refers to the Internet Assigned Numbers Authority (IANA) for maintaining several registries of TLS constants.
 IANA marked its [TLS cipher suites](https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4) with Kyber as obsoleted by MLKEM.
-They define the TLS signature schemes `mldsa44`, `mldsa65`, and `mldsa87`, but none for SLH-DSA or SPHINCS+ (yet).
+They define the TLS signature schemes `mldsa44`, `mldsa65`, and `mldsa87`, but none for SLH-DSA or SPHINCS+.
+With these TLS constants defined, implementations can request quantum-safe algorithms in `ClientHello` messages and pick them in `ServerHello` messages.
 
 ## Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM)
 
