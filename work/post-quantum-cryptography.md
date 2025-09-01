@@ -46,6 +46,7 @@ Transport Layer Security (TLS) establishes secure communication sessions with it
 
 1. The client requests a TLS connection and sends a list of supported cipher suites (TLS Handshake `ClientHello` message).
 These are combinations of symmetric key encryption algorithms, message authentication codes, key exchange algorithms, and parameters.
+As of TLS 1.3 the cipher suites specify the symmetric encryption algorithm and the cryptographic hash function for the HKDF only.
 2. The server sends which cipher suite it picked (`ServerHello` message).
 3. As of here the server communicates encrypted and sends its extension list (`EncryptedExtensions` message).
 4. The server authenticates with its digital certificate (`Certificate` message) and the proof that it posesses the matching private key (`CertificateVerify` message).
