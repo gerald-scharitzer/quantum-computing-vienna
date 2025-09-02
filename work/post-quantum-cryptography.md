@@ -348,6 +348,7 @@ by encrypting it with 256-bit symmetric keys.
 Persistent data encrypted with 128-bit keys can already be made quantum-resistant,
 by decrypting it with the old 128-bit keys and then encrypting it with the new 256-bit keys.
 Asymmetric key cryptography needs the new algorithms implemented to become quantum-resistant.
+TLS must integrate these algorithms.
 
 # Fun Facts
 
@@ -358,7 +359,7 @@ Both are fictional crystals from science fiction.
 
 Dilithium is used to control the matter anti-matter annihilation in space ship's warp cores.
 
-Kyber
+Kyber crystals power the light sabers.
 
 # References
 
