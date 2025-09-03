@@ -18,7 +18,7 @@ This my private rationale on post-quantum cryptography.
 
 I do not recommend anything to anyone in this matter.
 
-"post-quantum" means having arrived in the age of quantum computers.
+"post-quantum" means having arrived in the era of quantum computers.
 
 # Objective
 
@@ -277,6 +277,8 @@ Both OQS and PQCP are projects of the [Post-Quantum Cryptography Alliance (PQCA)
 
 The [Java Development Kit 24](https://openjdk.org/projects/jdk/24/) implements ML-KEM and ML-DSA.
 
+OpenSSL contains quantum-safe algorithms in its [default provider](https://docs.openssl.org/master/man7/OSSL_PROVIDER-default/).
+
 ## Coverage
 
 Several major languages of the [IEEE Top Programming Languages 2024](https://spectrum.ieee.org/top-programming-languages-2024) ranking are covered by PQC implementations.
@@ -286,10 +288,10 @@ Several major languages of the [IEEE Top Programming Languages 2024](https://spe
 | Python     | liboqs C library          | ?            |
 | Java       | Bouncy Castle or JDK      | ?            |
 | JavaScript | liboqs compiled to wasm   | ?            |
-| C++        | liboqs C library          | ?            |
+| C++        | liboqs C library          | OpenSSL libssl C library |
 | TypeScript | liboqs compiled to wasm   | ?            |
 | C#         | Bouncy Castle             | ?            |
-| Go         | liboqs C library or CIRCL | ?            |
+| Go         | liboqs C library or CIRCL | OpenSSL libssl C library |
 | C          | liboqs C library          | ?            |
 | Rust       | liboqs C library          | ?            |
 
@@ -359,7 +361,7 @@ Both are fictional crystals from science fiction.
 
 Dilithium is used to control the matter anti-matter annihilation in space ship's warp cores.
 
-Kyber crystals power the light sabers.
+Kyber crystals power light sabers.
 
 # References
 
