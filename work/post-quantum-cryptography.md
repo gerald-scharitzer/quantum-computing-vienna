@@ -283,19 +283,19 @@ OpenSSL contains quantum-safe algorithms in its [default provider](https://docs.
 
 Several major languages of the [IEEE Top Programming Languages 2024](https://spectrum.ieee.org/top-programming-languages-2024) ranking are covered by PQC implementations.
 
-| Language   | Post-Quantum Cryptography | TLS with PQC |
-| ---------- | ------------------------- | ------------ |
-| Python     | liboqs C library          | ?            |
+| Language   | Post-Quantum Cryptography | TLS with PQC               |
+| ---------- | ------------------------- | -------------------------- |
+| Python     | liboqs C library          | `ssl` module wraps OpenSSL |
 | Java       | Bouncy Castle or JDK      | ?            |
 | JavaScript | liboqs compiled to wasm   | ?            |
-| C++        | liboqs C library          | OpenSSL libssl C library |
+| C++        | liboqs C library          | OpenSSL libssl C library   |
 | TypeScript | liboqs compiled to wasm   | ?            |
 | C#         | Bouncy Castle             | ?            |
-| Go         | liboqs C library or CIRCL | OpenSSL libssl C library |
-| C          | liboqs C library          | ?            |
+| Go         | liboqs C library or CIRCL | ?            |
+| C          | liboqs C library          | OpenSSL libssl C library   |
 | Rust       | liboqs C library          | ?            |
 
-There are [Python bindings in liboqs](https://openquantumsafe.org/liboqs/wrappers.html).
+There are [Python bindings in liboqs](https://openquantumsafe.org/liboqs/wrappers.html) and the standard library module [`ssl`](https://docs.python.org/3/library/ssl.html) wraps OpenSSL.
 
 Java can use the [Bouncy Castle Java](https://www.bouncycastle.org/documentation/documentation-java/#bouncy-castle-java-fips-documentation) libraries
 or the algorithms ML-KEM and ML-DSA (JEPs 496 and 497) in [JDK 24](https://openjdk.org/projects/jdk/24/).
@@ -303,6 +303,7 @@ or the algorithms ML-KEM and ML-DSA (JEPs 496 and 497) in [JDK 24](https://openj
 JavaScript can call the liboqs C library [compiled to web assembly](https://emscripten.org/).
 
 C++ can call the liboqs C library, its [C++ bindings](https://openquantumsafe.org/liboqs/wrappers.html), or other libraries at higher protocol layers like [OpenSSL `libcrypto` and `libssl`](https://docs.openssl.org/master/man7/ossl-guide-libraries-introduction/).
+The [OpenSSL default provider](https://docs.openssl.org/master/man7/OSSL_PROVIDER-default/) contains [quantum-safe algorithms like ML-KEM](https://docs.openssl.org/master/man7/OSSL_PROVIDER-default/#key-exchange) and [ML-DSA and SLH-DSA](https://docs.openssl.org/master/man7/OSSL_PROVIDER-default/#asymmetric-signature).
 
 TypeScript as a superset of JavaScript can call the liboqs C library [compiled to web assembly](https://emscripten.org/).
 
