@@ -297,6 +297,8 @@ Several major languages of the [IEEE Top Programming Languages 2024](https://spe
 
 There are [Python bindings in liboqs](https://openquantumsafe.org/liboqs/wrappers.html) and the standard library module [`ssl`](https://docs.python.org/3/library/ssl.html) wraps OpenSSL.
 
+OpenSSL prefers hybrid post-quantum cryptography key encapsulation mechanisms as of [release 3.5](https://github.com/openssl/openssl/releases/tag/openssl-3.5.0).
+
 Java can use the [Bouncy Castle Java](https://www.bouncycastle.org/documentation/documentation-java/#bouncy-castle-java-fips-documentation) libraries
 or the algorithms ML-KEM and ML-DSA (JEPs 496 and 497) in [JDK 24](https://openjdk.org/projects/jdk/24/).
 
