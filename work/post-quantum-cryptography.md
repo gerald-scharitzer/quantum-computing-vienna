@@ -301,6 +301,7 @@ OpenSSL prefers hybrid post-quantum cryptography key encapsulation mechanisms as
 
 Java can use the [Bouncy Castle Java](https://www.bouncycastle.org/documentation/documentation-java/#bouncy-castle-java-fips-documentation) libraries
 or the algorithms ML-KEM and ML-DSA (JEPs 496 and 497) in [JDK 24](https://openjdk.org/projects/jdk/24/).
+The Bouncy Castle Java Secure Socket Extension (JSSE) can be configured as the first security provider.
 
 JavaScript can call the liboqs C library [compiled to web assembly](https://emscripten.org/).
 
