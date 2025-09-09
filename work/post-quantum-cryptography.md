@@ -18,6 +18,8 @@ This my private rationale on post-quantum cryptography.
 
 I do not recommend anything to anyone in this matter.
 
+I do not claim suitability for any purpose.
+
 "post-quantum" means having arrived in the era of quantum computers.
 
 # Objective
@@ -301,7 +303,8 @@ OpenSSL prefers hybrid post-quantum cryptography key encapsulation mechanisms as
 
 Java can use the [Bouncy Castle Java](https://www.bouncycastle.org/documentation/documentation-java/#bouncy-castle-java-fips-documentation) libraries
 or the algorithms ML-KEM and ML-DSA (JEPs 496 and 497) in [JDK 24](https://openjdk.org/projects/jdk/24/).
-The Bouncy Castle Java Secure Socket Extension (JSSE) can be configured as the first security provider.
+The Bouncy Castle Java Secure Socket Extension (JSSE) provider can be configured as the default security provider,
+but post-quantum cryptography algorithms are not used in the Bouncy Castle TLS cipher suites yet.
 
 JavaScript can call the liboqs C library [compiled to web assembly](https://emscripten.org/).
 
