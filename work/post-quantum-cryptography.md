@@ -285,17 +285,17 @@ OpenSSL contains quantum-safe algorithms in its [default provider](https://docs.
 
 Several major languages of the [IEEE Top Programming Languages 2024](https://spectrum.ieee.org/top-programming-languages-2024) ranking are covered by PQC implementations.
 
-| Language   | Post-Quantum Cryptography | TLS with PQC               |
-| ---------- | ------------------------- | -------------------------- |
-| Python     | liboqs C library          | `ssl` module wraps OpenSSL |
-| Java       | Bouncy Castle or JDK      | ?            |
-| JavaScript | liboqs compiled to wasm   | ?            |
-| C++        | liboqs C library          | OpenSSL libssl C library   |
-| TypeScript | liboqs compiled to wasm   | ?            |
-| C#         | Bouncy Castle             | ?            |
-| Go         | liboqs C library or CIRCL | ?            |
-| C          | liboqs C library          | OpenSSL libssl C library   |
-| Rust       | liboqs C library          | ?            |
+| Language   | Post-Quantum Cryptography | TLS with PQC               | HTTPS with PQC |
+| ---------- | ------------------------- | -------------------------- | -------------- |
+| Python     | liboqs C library          | `ssl` module wraps OpenSSL |                |
+| Java       | Bouncy Castle or JDK      | ?                          |                |
+| JavaScript | liboqs compiled to wasm   | ?                          |                |
+| C++        | liboqs C library          | OpenSSL libssl C library   |                |
+| TypeScript | liboqs compiled to wasm   | ?                          |                |
+| C#         | Bouncy Castle             | ?                          |                |
+| Go         | liboqs C library or CIRCL | ?                          |                |
+| C          | liboqs C library          | OpenSSL libssl C library   |                |
+| Rust       | liboqs C library          | ?                          |                |
 
 There are [Python bindings in liboqs](https://openquantumsafe.org/liboqs/wrappers.html) and the standard library module [`ssl`](https://docs.python.org/3/library/ssl.html) wraps OpenSSL.
 
