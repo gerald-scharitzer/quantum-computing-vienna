@@ -298,6 +298,8 @@ Several major languages of the [IEEE Top Programming Languages 2024](https://spe
 | Rust       | liboqs C library          | ?                          |                |
 
 There are [Python bindings in liboqs](https://openquantumsafe.org/liboqs/wrappers.html) and the standard library module [`ssl`](https://docs.python.org/3/library/ssl.html) wraps OpenSSL.
+The Python HTTP client package `httpx` is based on OpenSSL, and supports HTTP/2 and asynchronous programming.
+The Python package [`aioquic`](https://github.com/aiortc/aioquic) provides HTTP/3.
 
 OpenSSL prefers hybrid post-quantum cryptography key encapsulation mechanisms as of [release 3.5](https://github.com/openssl/openssl/releases/tag/openssl-3.5.0).
 
