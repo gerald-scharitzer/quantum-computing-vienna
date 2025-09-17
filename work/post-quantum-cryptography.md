@@ -302,7 +302,7 @@ The Python HTTP client package `httpx` is based on OpenSSL, and supports HTTP/2 
 The Python package [`aioquic`](https://github.com/aiortc/aioquic) provides HTTP/3.
 
 OpenSSL prefers hybrid post-quantum cryptography key encapsulation mechanisms as of [release 3.5](https://github.com/openssl/openssl/releases/tag/openssl-3.5.0).
-This makes it [available for several platforms](https://github.com/openssl/openssl/blob/master/INSTALL.md#prerequisites) and programming languages, basically everything that can call a native library.
+This makes it [available as native libraries for several platforms](https://github.com/openssl/openssl/blob/master/INSTALL.md) and programming languages, basically every language that can call a native library.
 
 Java can use the [Bouncy Castle Java](https://www.bouncycastle.org/documentation/documentation-java/#bouncy-castle-java-fips-documentation) libraries
 or the algorithms ML-KEM and ML-DSA (JEPs 496 and 497) in [JDK 24](https://openjdk.org/projects/jdk/24/).
