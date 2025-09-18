@@ -285,17 +285,19 @@ OpenSSL contains quantum-safe algorithms in its [default provider](https://docs.
 
 Several major languages of the [IEEE Top Programming Languages 2024](https://spectrum.ieee.org/top-programming-languages-2024) ranking are covered by PQC implementations.
 
-| Language   | Post-Quantum Cryptography | TLS with PQC               | HTTPS with PQC |
-| ---------- | ------------------------- | -------------------------- | -------------- |
-| Python     | liboqs C library          | `ssl` module wraps OpenSSL |                |
-| Java       | Bouncy Castle or JDK      | ?                          |                |
-| JavaScript | liboqs compiled to wasm   | ?                          |                |
-| C++        | liboqs C library          | OpenSSL libssl C library   |                |
-| TypeScript | liboqs compiled to wasm   | ?                          |                |
-| C#         | Bouncy Castle             | ?                          |                |
-| Go         | liboqs C library or CIRCL | ?                          |                |
-| C          | liboqs C library          | OpenSSL libssl C library   |                |
-| Rust       | liboqs C library          | ?                          |                |
+Disclaimer: This section is a collection of snapshots of a rapidly evolving software ecosystem and may therefore be not up to date or incomplete.
+
+| Language   | Post-Quantum Cryptography | TLS with PQC               | HTTPS with PQC       |
+| ---------- | ------------------------- | -------------------------- | -------------------- |
+| Python     | liboqs C library          | `ssl` module wraps OpenSSL | `httpx` uses OpenSSL |
+| Java       | Bouncy Castle or JDK      | ?                          |                      |
+| JavaScript | liboqs compiled to wasm   | ?                          |                      |
+| C++        | liboqs C library          | OpenSSL libssl C library   |                      |
+| TypeScript | liboqs compiled to wasm   | ?                          |                      |
+| C#         | Bouncy Castle             | ?                          |                      |
+| Go         | liboqs C library or CIRCL | ?                          |                      |
+| C          | liboqs C library          | OpenSSL libssl C library   |                      |
+| Rust       | liboqs C library          | ?                          |                      |
 
 There are [Python bindings in liboqs](https://openquantumsafe.org/liboqs/wrappers.html) and the standard library module [`ssl`](https://docs.python.org/3/library/ssl.html) wraps OpenSSL.
 The Python HTTP client package `httpx` is based on OpenSSL, and supports HTTP/2 and asynchronous programming.
@@ -322,6 +324,12 @@ C# can use the [Bouncy Castle C# .NET](https://www.bouncycastle.org/documentatio
 Go can use [CIRCL](https://github.com/cloudflare/circl) or the [Go bindings in liboqs](https://openquantumsafe.org/liboqs/wrappers.html).
 
 Rust can use the [Rust bindings in liboqs](https://openquantumsafe.org/liboqs/wrappers.html) or the [`pgcrypto` crates](https://github.com/rustpq/pqcrypto).
+
+### TLS
+
+For the handshake you need defined TLS protocol constants to specify the post-quantum cryptographic algorithms.
+IANA registers those.
+The TLS implementations must map these constants to the algorithm implementations.
 
 # Initiatives
 
