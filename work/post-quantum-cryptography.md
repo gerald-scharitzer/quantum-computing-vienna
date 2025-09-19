@@ -329,7 +329,18 @@ Rust can use the [Rust bindings in liboqs](https://openquantumsafe.org/liboqs/wr
 
 For the handshake you need defined TLS protocol constants to specify the post-quantum cryptographic algorithms.
 IANA registers those.
-The TLS implementations must map these constants to the algorithm implementations.
+The TLS implementations must link these constants to the algorithm implementations,
+such that they run the TLS sessions.
+
+### HTTPS
+
+One major user of TLS is HTTPS.
+So you need HTTP clients that provide quantum-safe key establishment and signature algorithms,
+and servers that provide them as well, and pick them.
+
+### HTTP/3 and async
+
+If you have challenging performance requirements, then you might need HTTP/3 or async.
 
 # Initiatives
 
