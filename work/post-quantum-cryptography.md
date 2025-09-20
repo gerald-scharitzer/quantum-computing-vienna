@@ -331,6 +331,8 @@ For the handshake you need defined TLS protocol constants to specify the post-qu
 IANA registers those.
 The TLS implementations must link these constants to the algorithm implementations,
 such that they run the TLS sessions.
+Only TLS 1.3 and 1.2 are supported now.
+[RFC 8446](https://datatracker.ietf.org/doc/html/rfc8446) defines TLS 1.3 and [RFC 5246](https://datatracker.ietf.org/doc/html/rfc5246) defines TLS 1.2.
 
 ### HTTPS
 
