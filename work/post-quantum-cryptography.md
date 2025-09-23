@@ -22,6 +22,18 @@ I do not claim suitability for any purpose.
 
 "post-quantum" means having arrived in the era of quantum computers.
 
+# Essentials
+
+Our information society relies on effective cryptography.
+
+So your web browser warns you, when you communicate over an unsecured channel.
+
+Your browser and other applications do not communicate with the other endpoint, when security checks fail, and the connection or the other endpoint are not considered secure.
+
+Shor's algorithm threatens current asymmetric cryptography, like Rivest-Shamir-Adleman (RSA), Diffie-Hellman Ephemeral (DHE), and Elliptic Curve Diffie-Hellman Ephemeral (ECDHE).
+
+Grover's algorithm threatens cryptographic hash functions and symmetric encryption, but that can be neutralized by doubling the hash and key sizes.
+
 # Objective
 
 Large parts of our information society rely on secure communications,
