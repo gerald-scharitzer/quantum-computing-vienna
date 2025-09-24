@@ -24,7 +24,10 @@ I do not claim suitability for any purpose.
 
 # Essentials
 
-Our information society relies on effective cryptography.
+Our information society relies on effective cryptography, such that we know with high probability, that
+- who we are talking to (authenticity),
+- no one else knows what we were talking (confidentiality), and
+- we received the messages that we sent each other (integrity).
 
 So your web browser warns you, when you communicate over an unsecured channel.
 
