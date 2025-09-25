@@ -24,7 +24,7 @@ I do not claim suitability for any purpose.
 
 # Essentials
 
-Our information society relies on effective cryptography, such that we know with high probability, that
+Our information society relies on effective cryptography, such that we know with high probability,
 - who we are talking to (authenticity),
 - no one else knows what we were talking (confidentiality), and
 - we received the messages that we sent each other (integrity).
@@ -33,9 +33,11 @@ So your web browser warns you, when you communicate over an unsecured channel.
 
 Your browser and other applications do not communicate with the other endpoint, when security checks fail, and the connection or the other endpoint are not considered secure.
 
+Grover's algorithm threatens cryptographic hash functions and symmetric encryption, but that can be neutralized by doubling the hash and key sizes.
+
 Shor's algorithm threatens current asymmetric cryptography, like Rivest-Shamir-Adleman (RSA), Diffie-Hellman Ephemeral (DHE), and Elliptic Curve Diffie-Hellman Ephemeral (ECDHE).
 
-Grover's algorithm threatens cryptographic hash functions and symmetric encryption, but that can be neutralized by doubling the hash and key sizes.
+Scaling progress in increasing the processing capacity of quantum computers increases these threats.
 
 # Objective
 
