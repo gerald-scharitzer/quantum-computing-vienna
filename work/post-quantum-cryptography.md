@@ -39,6 +39,8 @@ Shor's algorithm threatens current asymmetric cryptography, like Rivest-Shamir-A
 
 Scaling progress in increasing the processing capacity of quantum computers increases these threats.
 
+Establishing a minimum hash length and corresponding security level, like that of SHA-256, neutralizes the threat to cryptographic hash functions.
+
 # Objective
 
 Large parts of our information society rely on secure communications,
