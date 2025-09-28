@@ -29,17 +29,22 @@ Our information society relies on effective cryptography, such that we know with
 - no one else knows what we were talking (confidentiality), and
 - we received the messages that we sent each other (integrity).
 
-So your web browser warns you, when you communicate over an unsecured channel.
+So your web browser warns you, when you try to communicate over an unsecured channel.
 
 Your browser and other applications do not communicate with the other endpoint, when security checks fail, and the connection or the other endpoint are not considered secure.
 
+HTTPS is one of the major application layer protocols and relies on TLS,
+which in turn relies on cryptographic hash functions, symmetric cryptography, and asymmetric cryptography.
+
+These rely on mathematical principles like integer factorization, discrete logarithms, and elliptic curves.
+
 Grover's algorithm threatens cryptographic hash functions and symmetric encryption, but that can be neutralized by doubling the hash and key sizes.
+
+Establishing a minimum hash length and corresponding security level, like that of SHA-256, neutralizes this threat to cryptographic hash functions.
 
 Shor's algorithm threatens current asymmetric cryptography, like Rivest-Shamir-Adleman (RSA), Diffie-Hellman Ephemeral (DHE), and Elliptic Curve Diffie-Hellman Ephemeral (ECDHE).
 
 Scaling progress in increasing the processing capacity of quantum computers increases these threats.
-
-Establishing a minimum hash length and corresponding security level, like that of SHA-256, neutralizes the threat to cryptographic hash functions.
 
 # Objective
 
