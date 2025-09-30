@@ -386,6 +386,8 @@ The [Quantum Europe Strategy](https://digital-strategy.ec.europa.eu/en/library/q
 
 > "the EU and its Member States are now implementing the post-quantum cryptography [Recommendation](https://digital-strategy.ec.europa.eu/en/library/recommendation-coordinated-implementation-roadmap-transition-post-quantum-cryptography) and have just published a [Roadmap](https://digital-strategy.ec.europa.eu/en/news/eu-reinforces-its-cybersecurity-post-quantum-cryptography) for the transition to post-quantum cryptography."
 
+This roadmap includes rolling out hybrid (quantum plus classic) quantum-safe cryptography as the new standard and default operation model.
+
 # Maturity
 
 Implementations of post-quantum public key algorithms are just one of the steps towards quantum-safe communications.
