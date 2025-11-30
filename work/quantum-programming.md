@@ -15,3 +15,5 @@ There are several quantum SDKs.
 | SDK | Provider | Open Source | Repository | License |
 | --- | -------- | ----------- | ---------- | ------- |
 | [Qiskit](https://www.ibm.com/quantum/qiskit) | IBM | yes | [GitHub](https://github.com/Qiskit/qiskit) | [Apache 2.0](https://github.com/Qiskit/qiskit/blob/main/LICENSE.txt) |
+
+The [Unitary Foundation](https://unitary.foundation/) published several [Quantum Open Source Surveys](https://unitaryfoundation.github.io/survey-2025/).
