@@ -12,8 +12,9 @@ The control system reads the classic bits and bytes of the quantum instructions.
 
 There are several quantum SDKs and the [Unitary Foundation](https://unitary.foundation/) covered this in several [Quantum Open Source Surveys](https://unitaryfoundation.github.io/survey-2025/).
 Among others the 2025 survey lists these [full-stack development platforms](https://unitaryfoundation.github.io/survey-2025/#full-stack-development-platforms-compilers-and-simulators-used-currently-or-in-the-future).
+The description is cited verbatim from the homepage of the SDK and does not necessarily reflect the author's opinion.
 
-| SDK | Provider | Open Source | Repository | License |
-| --- | -------- | ----------- | ---------- | ------- |
-| [Qiskit](https://www.ibm.com/quantum/qiskit) | [IBM](https://www.ibm.com/) | yes | [GitHub](https://github.com/Qiskit/qiskit) | [Apache 2.0](https://github.com/Qiskit/qiskit/blob/main/LICENSE.txt) |
-| [PennyLane](https://pennylane.ai/) | [Xanadu](https://xanadu.ai/) | yes | [GitHub](https://github.com/PennyLaneAI/pennylane) | [Apache 2.0](https://github.com/PennyLaneAI/pennylane/blob/master/LICENSE) |
+| SDK | Provider | Open Source | Repository | License | Description |
+| --- | -------- | ----------- | ---------- | ------- | ----------- |
+| [Qiskit](https://www.ibm.com/quantum/qiskit) | [IBM](https://www.ibm.com/) | yes | [GitHub](https://github.com/Qiskit/qiskit) | [Apache 2.0](https://github.com/Qiskit/qiskit/blob/main/LICENSE.txt) | Qiskit is the world’s most popular and performant software stack for quantum computing and algorithms research. Build, optimize, and execute quantum workloads at scale. |
+| [PennyLane](https://pennylane.ai/) | [Xanadu](https://xanadu.ai/) | yes | [GitHub](https://github.com/PennyLaneAI/pennylane) | [Apache 2.0](https://github.com/PennyLaneAI/pennylane/blob/master/LICENSE) | The definitive open-source Python framework for quantum programming. Built by researchers, for research.
