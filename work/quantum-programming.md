@@ -8,6 +8,14 @@ but these are encoded with classic bits and bytes.
 So far the only quantum device in a quantum computer is the quantum processor.
 The control system reads the classic bits and bytes of the quantum instructions.
 
+## Toolchain
+
+Running quantum algorithms on quantum computers needs a stack of software engineering tools.
+
+Source code management and version control keep your foundation safe.
+
+Compilers translate source code into executable code.
+
 ## Software Development Kit (SDK)
 
 There are several quantum SDKs and the [Unitary Foundation](https://unitary.foundation/) covered this in several [Quantum Open Source Surveys](https://unitaryfoundation.github.io/survey-2025/).
