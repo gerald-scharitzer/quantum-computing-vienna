@@ -28,3 +28,12 @@ The description is cited verbatim from the homepage of the SDK and does not nece
 | --- | -------- | ----------- | ---------- | ------- | ----------- |
 | [Qiskit](https://www.ibm.com/quantum/qiskit) | [IBM](https://www.ibm.com/) | yes | [GitHub](https://github.com/Qiskit/qiskit) | [Apache 2.0](https://github.com/Qiskit/qiskit/blob/main/LICENSE.txt) | Qiskit is the world’s most popular and performant software stack for quantum computing and algorithms research. Build, optimize, and execute quantum workloads at scale. |
 | [PennyLane](https://pennylane.ai/) | [Xanadu](https://xanadu.ai/) | yes | [GitHub](https://github.com/PennyLaneAI/pennylane) | [Apache 2.0](https://github.com/PennyLaneAI/pennylane/blob/master/LICENSE) | The definitive open-source Python framework for quantum programming. Built by researchers, for research.
+
+## Runtime
+
+are simulators on classic computers or they are physical quantum computers.
+
+Simulators can calculate the quantum effects, but can do so practically for small numbers only.
+At larger numbers the exponential effort dominates.
+
+For a scheduler, the quantum computers are just nodes with specific resources.
