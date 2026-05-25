@@ -34,6 +34,6 @@ The description is cited verbatim from the homepage of the SDK and does not nece
 are simulators on classic computers or they are physical quantum computers.
 
 Simulators can calculate the quantum effects, but can do so practically for small numbers only.
-At larger numbers the exponential effort dominates.
+At larger numbers the exponential effort dominates and renders the calculations infeasible.
 
 For a scheduler, the quantum computers are just nodes with specific resources.
